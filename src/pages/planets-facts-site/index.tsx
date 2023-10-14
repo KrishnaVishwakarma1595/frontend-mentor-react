@@ -32,7 +32,7 @@ const PlanetsFactsSite = () => {
                     data-activeplanetcode={activePlanetCode} onClick={() => setActiveSubSection('geology')}>Surface</li>
                 </ul>
             </div>
-            <section className={`d-flex justify-content-evenly align-items-center ${Styles.planetSection__container}`} style={{ marginTop: 50 }}>
+            <div className={`d-flex justify-content-evenly align-items-center ${Styles.planetSection__container}`} style={{ marginTop: 50 }}>
                 <div className={`${Styles.planetAvatar} position-relative`} role='main'>
                     {
                         activeSubSection !== 'geology' ? (
@@ -51,10 +51,10 @@ const PlanetsFactsSite = () => {
                 </div>
                 <div className={Styles.planetInfoSection}>
                     <div className='d-flex flex-column' style={{ rowGap: 24 }}>
-                        <h2 className={`m-0 ${Styles.planetName}`} role='heading'>
+                        <h2 className={`m-0 ${Styles.planetName}`}>
                             { currentPlanet.name }
                         </h2>
-                        <p role='contentinfo' className={`m-0 ${Styles.planetDescription}`}>
+                        <p className={`m-0 ${Styles.planetDescription}`}>
                             { currentPlanet[activeSubSection]['content'] }
                         </p>
                         <span className={`d-flex ${Styles.planetSourceLink}`} style={{ columnGap: 5 }}>
@@ -87,9 +87,9 @@ const PlanetsFactsSite = () => {
                         </button>
                     </div>
                 </div>
-            </section>
-            <section id='planet-analytics' role='contentinfo' className={Styles.planetAnalytics}>
-                <h2 className='d-none' role='heading'>Section</h2>
+            </div>
+            <div id='planet-analytics' className={Styles.planetAnalytics}>
+                <h2 className='d-none'>Section</h2>
                 <div className={Styles.analyticCard}>
                     <span>ROTATION TIME</span>
                     <span>{ currentPlanet.rotation }</span>
@@ -106,7 +106,7 @@ const PlanetsFactsSite = () => {
                     <span>AVERAGE TEMP.</span>
                     <span>{ currentPlanet.temperature }</span>
                 </div> 
-            </section>
+            </div>
             <footer className="attribution animate__animated animate__fadeIn animate__delay-1s pb-3" 
             style={{ color: 'var(--white)', fontFamily: 'var(--ff-spartan)' }}>            
                 Challenge by <a rel="noreferrer" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>{"  "}
