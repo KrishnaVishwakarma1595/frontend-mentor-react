@@ -25,7 +25,7 @@ const PlanetsFactHeader = ({
     return (
         <div className={`d-flex justify-content-between align-items-center ${Styles.planetsHeader}`}>
             <h1 className={Styles.headerTitle} style={{ cursor: 'pointer' }} onClick={() => onPlanetChange(0)} 
-            role="main">THE PLANETS</h1>
+            role="heading">THE PLANETS</h1>
             <nav>
                 <ul className={Styles.planetsHeaderNavList}>
                     {

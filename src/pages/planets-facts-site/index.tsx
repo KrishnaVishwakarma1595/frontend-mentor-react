@@ -51,7 +51,7 @@ const PlanetsFactsSite = () => {
                 </div>
                 <div className={Styles.planetInfoSection}>
                     <div className='d-flex flex-column' style={{ rowGap: 24 }}>
-                        <h2 className={`m-0 ${Styles.planetName}`} role='main'>
+                        <h2 className={`m-0 ${Styles.planetName}`} role='heading'>
                             { currentPlanet.name }
                         </h2>
                         <p role='contentinfo' className={`m-0 ${Styles.planetDescription}`}>
@@ -89,7 +89,7 @@ const PlanetsFactsSite = () => {
                 </div>
             </section>
             <section id='planet-analytics' role='contentinfo' className={Styles.planetAnalytics}>
-                <h2 className='d-none'>Section</h2>
+                <h2 className='d-none' role='heading'>Section</h2>
                 <div className={Styles.analyticCard}>
                     <span>ROTATION TIME</span>
                     <span>{ currentPlanet.rotation }</span>
@@ -108,7 +108,7 @@ const PlanetsFactsSite = () => {
                 </div> 
             </section>
             <footer className="attribution animate__animated animate__fadeIn animate__delay-1s pb-3" 
-            style={{ color: 'var(--white)', fontFamily: 'var(--ff-spartan)' }} role="contentinfo">            
+            style={{ color: 'var(--white)', fontFamily: 'var(--ff-spartan)' }}>            
                 Challenge by <a rel="noreferrer" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>{"  "}
                 Developed by <a rel="noreferrer" href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank"
                 aria-label="Developer - Krishna Vishwakarma">
