@@ -29,8 +29,18 @@ const SpaceTourism = () => {
             }
             {
                 activeNavItem === 3 ? <SpaceTourismTech /> : null
-            }
-        </div>
+            }            
+            <footer className="attribution animate__animated animate__fadeIn animate__delay-1s pb-3" 
+            style={{ color: 'var(--white)', fontFamily: 'var(--ff-bellefair)', position: activeNavItem === 2 ? 'absolute' : 'relative', bottom: 0 }}>            
+                Challenge by <a rel="noreferrer" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>{"  "}
+                Developed by <a rel="noreferrer" href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank"
+                aria-label="Developer - Krishna Vishwakarma">
+                    <img src="/logo-color-white.png" style={{ width: 150, margin: '6px auto'}} 
+                    alt="Developer - Krishna Vishwakarma" />
+                </a>
+                {/* <!-- <a href="https://www.frontendmentor.io/profile/KrishnaVishwakarma1595" target="_blank">Krishna Vishwakarma</a>.			 --> */}
+            </footer>
+        </div>        
     );
 }
 
