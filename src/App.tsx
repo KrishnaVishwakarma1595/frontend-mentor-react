@@ -2,8 +2,8 @@ import "./App.css";
 
 function App() {
 	return (
-		<main role="main">
-		</main>
+		<div id="main__app">
+		</div>
 	);
 }
 

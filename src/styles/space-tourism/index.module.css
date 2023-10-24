@@ -1,0 +1,797 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
+:root{
+    /* COLORS */
+    --dark-black: #0B0D17;
+    --light-violet: #D0D6F9;
+    --dark-border: #383B4B;
+    /* FONTS */
+    --ff-barlow: 'Barlow', sans-serif;
+    --ff-barlow-condensed: 'Barlow Condensed', sans-serif;
+    --ff-bellefair: 'Bellefair', serif;
+}
+
+.spaceTourismMainContainer{
+    min-height: 100vh;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+.spaceTourismMainContainer[data-value="0"]{
+    background: var(--dark-black) url('../../../public/space-tourism/assets/home/background-home-desktop.jpg');
+}
+
+.spaceTourismMainContainer[data-value="1"]{
+    background: var(--dark-black) url('../../../public/space-tourism/assets/destination/background-destination-desktop.jpg');
+}
+
+.spaceTourismMainContainer[data-value="2"]{
+    background: var(--dark-black) url('../../../public/space-tourism/assets/crew/background-crew-desktop.jpg');
+}
+
+.spaceTourismMainContainer[data-value="3"]{
+    background: var(--dark-black) url('../../../public/space-tourism/assets/technology/background-technology-desktop.jpg');
+}
+
+.spaceTourismHeader{
+    padding-top: 40px;
+    padding-left: 55px;
+}
+
+.navBar{
+    padding: 0px 124px;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.774227142333984px);
+    position: relative;
+}
+
+.navBar::before{
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 65%;
+    left: -60%;
+    top: 50%; 
+    background: rgba(255, 255, 255, 0.2515);
+}
+
+.navList{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    column-gap: 50px;
+}
+
+.navListItem{
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+    height: 96px;
+    text-transform: uppercase;
+    position: relative;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+
+.navListItem span{
+    color: var(--white);
+    font-family: var(--ff-barlow-condensed);
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 2.7px;
+}
+
+.navListItem span:first-child{
+    font-weight: 700;
+}
+
+.navListItem span:last-child{
+    font-weight: 400;   
+}
+
+.navListItem::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: 0px;
+    left: 0px;
+    transform: scaleX(0);
+    transition: all .3s linear;
+    background-color: rgba(255, 255, 255, 0.5021);
+}
+
+.navListItem:hover::after{
+    transform: scaleX(1);    
+}
+
+.activeNavListItem{    
+    border-bottom: 3px solid var(--white);
+}
+
+.activeNavListItem:hover::after{
+    transform: scaleX(0);
+}
+
+.stourHomeContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 200px;
+    padding-bottom: 150px;
+}
+
+.stourHomeContainer div:first-child{
+    width: 445px;
+}
+
+.stourHomeContainer h2{
+    color: var(--light-violet);
+    font-family: var(--ff-barlow-condensed);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    margin: 0px;
+}
+
+.stourHomeContainer h1{
+    color: var(--white);
+    font-family: var(--ff-bellefair);
+    font-size: 150px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px;
+}
+
+.stourHomeContainer p{
+    margin: 0px;
+    color: var(--light-violet);
+    font-family: var(--ff-barlow);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.exploreCTA{
+    width: 274px;
+    height: 274px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: var(--white);
+    color: var(--dark-black);
+    font-family: var(--ff-bellefair);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2px;
+    transition: all .3s linear;
+    text-transform: uppercase;
+}
+
+.exploreCTA:hover{
+    box-shadow: 0px 0px 0px 100px rgba(255,255,255,0.1036);
+}
+
+.stourDesitionContainer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 64px;    
+    margin-top: 91px;
+    padding-bottom: 118px;
+}
+
+.stour_dest__subheading{
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
+    padding-left: 160px;
+    margin: 0px;
+}
+
+.stour_dest__subheading span:first-child{
+    color: rgba(255, 255, 255, 0.25);
+    font-family: var(--ff-barlow-condensed);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 4.725px;
+}
+
+.stour_dest__subheading span:last-child{
+    color: var(--white);
+    font-family: var(--ff-barlow-condensed);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.725px;
+    text-transform: uppercase;
+}
+
+.destContentInfoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 140px;
+}
+
+.stoutTabs{
+    display: flex;
+    column-gap: 35px;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.stoutTabs li{
+    color: var(--light-violet);
+    font-family: var(--ff-barlow-condensed);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+}
+
+.stoutTabs li::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -8px;
+    height: 3px;
+    transform: scaleX(0);
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all .3s linear;
+}
+
+.stoutTabs li[data-value="active"]::after,.stoutTabs li:hover::after{
+    transform: scaleX(1);
+}
+
+.stoutTabs li[data-value="active"]::after{
+    background-color: rgba(255, 255, 255, 1);    
+}
+
+.destName{
+    color: var(--white);
+    font-family: var(--ff-bellefair);
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 14px;
+    margin-top: 37px;
+    text-transform: uppercase;
+}
+
+.destDesc{
+    color: #D0D6F9;
+    font-family: Barlow;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    padding-bottom: 54px;
+    border-bottom: 1px solid var(--dark-border);
+    margin-bottom: 28px;
+}
+
+.dest_avg_dist{
+    color: var(--light-violet);
+    font-family: var(--ff-barlow-condensed);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+    text-transform: uppercase;
+}
+
+.dest_est_time{
+    color: var(--white);
+    font-family: var(--ff-bellefair);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.destInfo{
+    width: 445px;
+}
+
+.sTourCrewContainer{
+    display: flex;
+    column-gap: 81px;
+    margin-top: 76px;    
+}
+
+.stourCrewSliderContainer{
+    display: flex;
+    flex-direction: column;
+    row-gap: 150px;
+    padding-left: 160px;
+}
+
+.crewSlideItem{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.crewMemberRole{
+    color: rgba(255, 255, 255, 0.5042);
+    font-family: var(--ff-bellefair);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.crewMemberName{
+    color: var(--white);
+    font-family: var(--ff-bellefair);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+}
+
+.crewMemberBio{
+    width: 444px;
+    color: var(--light-violet);
+    font-family: var(--ff-barlow);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.sliderPaginationCircle{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.174363);
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.sliderPaginationCircle:hover{
+    background-color: rgba(255, 255, 255, 0.5001);
+}
+
+.sliderPaginationCircle[data-value="active"]{
+    background-color: var(--white);
+}
+
+.sTourTechContainer{
+    display: flex;
+    flex-direction: column;
+    margin-top: 76px;
+    row-gap: 26px;
+    padding-left: 145px;
+    padding-bottom: 100px;
+}
+
+.stour_techs{
+    display: flex;
+    column-gap: 80px;
+}
+
+.stour_techList{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;    
+    align-items: center;
+}
+
+.stour_techListItem{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    color: var(--white);
+    text-align: center;
+    font-family: var(--ff-bellefair);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background: transparent;
+    letter-spacing: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s linear;
+}
+
+.stour_techListItem:hover{
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.stour_techListItemActive{
+    color: var(--dark-black);
+    background: var(--white);
+}
+
+.stour_techDetails{
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+}
+
+.stour_techDetails span{
+    color: var(--light-violet);
+    font-family: var(--ff-barlow-condensed);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    margin-bottom: 11px;
+}
+
+.stour_techDetails h1{
+    color: var(--white);
+    font-family: var(--ff-bellefair);
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 17px;
+    text-transform: uppercase; 
+}
+
+.stour_techDetails p{
+    color: var(--light-violet);
+    font-family: var(--ff-barlow);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.crewMemberAvatar{
+    position:absolute; 
+    bottom: 0px;
+    right: 186px;
+}
+
+.crewSlideNav{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    margin: 60px 0px;
+}
+
+.stour_techInfoContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stour_mobileNavIcon{ display: none; }
+.mobileNavbar{
+    padding: 32px 26px 32px 32px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 254px;
+    height: 100%;
+    z-index: 2;
+    background: rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(40.774227142333984px);
+}
+
+.mobileNavList{
+    padding-left: 0px;
+    margin-top: 64px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.mobileNavListItem{
+    color: var(--white);
+    font-family: var(--ff-barlow-condensed);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+    display: flex;
+    column-gap: 11px;
+    align-self: flex-start;
+    padding-bottom: 5px;
+}
+
+.activeMNavListItem{
+    border-bottom: 3px solid var(--white);
+}
+
+.mobileNavListItem span:first-child{
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1440px) and (min-width: 1200px) {
+    .navBar::before{
+        width: 35%;
+        left: -30%;
+    }
+}
+
+@media screen and (max-width: 1300px){
+    .sTourTechContainer{
+        padding-left: 38px;
+    }
+    .stour_techs{
+        column-gap: 40px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .navBar::before{ display: none; }
+    .stour_techDetails{
+        row-gap: 16px;
+        width: 370px;
+    }
+    .stour_techDetails span{ margin: 0 !important;}
+    .stour_techDetails h1{
+        font-size: 40px;
+        margin: 0 !important;
+    }
+    .stour_techDetails p{
+        margin: 0;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .stour_techInfoContainer img{ width: 475px !important; }
+}
+
+@media screen and (max-width: 1023px){
+    .spaceTourismMainContainer[data-value="0"]{
+        background: var(--dark-black) url('../../../public/space-tourism/assets/home/background-home-tablet.jpg');
+    }
+    
+    .spaceTourismMainContainer[data-value="1"]{
+        background: var(--dark-black) url('../../../public/space-tourism/assets/destination/background-destination-tablet.jpg');
+    }
+    
+    .spaceTourismMainContainer[data-value="2"]{
+        background: var(--dark-black) url('../../../public/space-tourism/assets/crew/background-crew-tablet.jpg');
+    }
+    
+    .spaceTourismMainContainer[data-value="3"]{
+        background: var(--dark-black) url('../../../public/space-tourism/assets/technology/background-technology-tablet.jpg');
+    }
+    .stourHomeContainer{
+        flex-direction: column;
+        margin-top: 100px;
+        text-align: center;
+        row-gap: 150px;
+    }
+    .spaceTourismHeader{
+        padding-top: 0px;
+        padding-left: 38px;
+    }
+    .navBar{
+        backdrop-filter: blur(40.774227142333984px);
+        padding: 0px 48px;
+    }
+    .stourHomeContainer h2{ font-size: 20px; }
+    .navListItem span:first-child{ display: none; }
+    /* Destination */
+    .stour_dest__subheading{ padding-left: 38px; }
+    .stourDesitionContainer{
+        margin-top: 40px;
+    }
+    .destContentInfoContainer{
+        flex-direction: column;
+        row-gap: 54px;
+        text-align: center;
+    }
+    .destInfo{ width: 570px; }
+    .stoutTabs,.destInfo div:last-child{ justify-content: center; }
+    .stour_dest__subheading span:last-child{ font-size: 20px;}
+    .destName{ font-size: 80px; }
+    .destDesc{ font-size: 16px; line-height: 28px; }
+    .destContentInfoContainer img{ width: 300px !important; }
+    /* Crew */
+    .sTourCrewContainer{ flex-direction: column; }
+    .stourCrewSliderContainer{
+        padding-left: 38px;
+        width: 100%;
+        row-gap: 60px;
+    }
+    .crewSlideItem{ align-items: center; }
+    .crewMemberBio{ 
+        width: 458px; 
+        text-align: center; 
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .crewMemberAvatar{
+        position: unset;      
+        align-self: center;
+    }
+    .crewSlideNav{ margin-top: 40px; }
+    .crewMemberRole{ font-size: 24px; }
+    .crewMemberName{ font-size: 40px; }
+    /* Technology */
+    .sTourTechContainer{
+        row-gap: 60px;
+        padding-left: 0px;
+    }
+    .stour_techInfoContainer{
+        flex-direction: column-reverse;
+    }
+    .sTourTechContainer .stour_dest__subheading{
+        padding-left: 38px !important;
+    }
+    .stour_techInfoContainer img{ width: 100% !important; }
+    .stour_techInfoContainer{ align-items: unset; }
+    .stour_techs{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 56px;
+        row-gap: 44px;
+    }
+    .stour_techList{
+        flex-direction: row;
+        column-gap: 16px;
+    }
+    .stour_techDetails{
+        width: 570px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .navBar{ display: none; }
+    .spaceTourismHeader{
+        padding: 24px;
+    }
+    .stour_mobileNavIcon{ 
+        display: block; 
+        width: 24px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 570px){
+    .spaceTourismMainContainer[data-value="0"]{
+        background: var(--dark-black) url('../../../public/space-tourism/assets/home/background-home-mobile.jpg');
+    }
+    
+    .spaceTourismMainContainer[data-value="1"]{
+        background: var(--dark-black) url('../../../public/space-tourism/assets/destination/background-destination-mobile.jpg');
+    }
+    
+    .spaceTourismMainContainer[data-value="2"]{
+        background: var(--dark-black) url('../../../public/space-tourism/assets/crew/background-crew-mobile.jpg');
+    }
+    
+    .spaceTourismMainContainer[data-value="3"]{
+        background: var(--dark-black) url('../../../public/space-tourism/assets/technology/background-technology-mobile.jpg');
+    }
+
+    /* Home */
+    .stourHomeContainer{
+        margin-top: 48px;
+    }
+    .stourHomeContainer div:first-child{
+        width: 100%;
+        row-gap: 16px;
+        padding: 0px 24px;
+    }
+    .stourHomeContainer h2{ font-size: 16px; }
+    .stourHomeContainer h1{ font-size: 80px; }
+    .stourHomeContainer p{ font-size: 15px; line-height: 25px; }
+    .exploreCTA{
+        width: 150px;
+        height: 150px;
+        font-size: 20px;
+    }
+    .exploreCTA:hover{
+        box-shadow: 0px 0px 0px 50px rgba(255,255,255,0.1036);
+    }
+    /* Destination */
+    .stourDesitionContainer{
+        margin-top: 24px;
+    }
+    .stour_dest__subheading{
+        justify-content: center;
+        column-gap: 18px;
+        padding-left: 0px;
+    }
+    .destInfo, .stour_techDetails{
+        width: 100%;
+        padding: 0 24px;
+    }
+    .stour_dest__subheading span{ font-size: 16px !important; }
+    .destContentInfoContainer img{ width: 170px !important; }
+    .stoutTabs li{ font-size: 14px;}
+    .destName{ font-size: 56px; }
+    .destInfo div:last-child{
+        flex-direction: column;
+        row-gap: 32px;
+    }
+    /* Crew */
+    .sTourCrewContainer{
+        margin-top: 24px;
+        flex-direction: column-reverse;
+        padding-bottom: 104px;
+    }
+    .stourCrewSliderContainer{ padding-left: 0px; }
+    .stourCrewSliderContainer .stour_dest__subheading{ display: none; } 
+    .sTourabsMHeading{ 
+        display: flex !important; 
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, 0%);
+    }
+    .crewMemberAvatar{
+        width: 177px !important;
+        margin-top: 32px;        
+    }
+    .crewMemberAvatar::after{
+        content: '';
+        position: absolute;
+        width: 320px;
+        height: 1px;
+        background: var(--dark-border);
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .crewSlideItem{
+        flex-direction: column-reverse;
+    }
+    .crewSlideNav{
+        margin-bottom: 32px;
+    }
+    .crewSlideNav, .crewMemberRole{ order: 1; font-size: 16px; }
+    .crewMemberName{ order: 0; font-size: 24px; margin-bottom: 16px; }
+    .crewMemberBio{ order: -1; width: 100%; padding: 0px 24px; }
+    /* Technology */
+    .sTourTechContainer .stour_dest__subheading{
+        padding-left: 0px !important;
+    }
+    .sTourTechContainer{
+        margin-top: 24px;
+        row-gap: 32px;
+    }
+    .stour_techListItem{
+        width: 40px; height: 40px; font-size: 16px;
+    }
+    .stour_techDetails h1{
+        font-size: 24px;
+    }
+}

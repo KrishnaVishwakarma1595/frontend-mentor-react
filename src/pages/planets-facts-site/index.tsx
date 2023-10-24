@@ -16,7 +16,7 @@ const PlanetsFactsSite = () => {
     }
 
     useEffect(() => {
-        document.title = 'Frontend Mentor React | Planets Facts Site'
+        document.title = 'Frontend Mentor | Planets Facts Site'
     }, [])
 
     return (
