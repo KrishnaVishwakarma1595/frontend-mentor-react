@@ -12,11 +12,11 @@ const SpaceTourismHeader = ({
     const [showMenu, setShowMenu] = useState<boolean>(false);
 
     return (
-        <div role='banner' className={`d-flex justify-content-between align-items-center ${Styles.spaceTourismHeader}`}>
+        <div className={`d-flex justify-content-between align-items-center ${Styles.spaceTourismHeader}`}>
             <img src='/space-tourism/assets/shared/logo.svg' alt='Space Tourism' style={{
                 width: 48, height: 48
             }} />
-            <nav role='navigation' className={Styles.navBar}>
+            <nav className={Styles.navBar}>
                 <ul className={`${Styles.navList}`}>
                     {
                         ['home', 'destination', 'crew', 'technology'].map((item:string, index:number) => (
@@ -34,7 +34,7 @@ const SpaceTourismHeader = ({
             onClick={() => setShowMenu(!showMenu)} />
             {
                 showMenu ? (
-                    <nav role='navigation' className={`${Styles.mobileNavbar} animate__animated animate__slideInRight`}>
+                    <nav className={`${Styles.mobileNavbar} animate__animated animate__slideInRight`}>
                         <div className='d-flex justify-content-end'>
                             <img src='/space-tourism/assets/shared/icon-close.svg' alt='Mobile Menu icon' 
                             className={Styles.stour_mobileNavIcon} onClick={() => setShowMenu(false)} />

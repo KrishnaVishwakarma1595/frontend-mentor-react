@@ -28,16 +28,21 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot-desktop.png)
-![](./screenshot-desktop-1.png)
-![](./screenshot-desktop-2.png)
-![](./screenshot-mobile.png)
-![](./mobile.png)
+![](./screenshot-default-desktop.png)
+![](./screenshot-destination-desktop.png)
+![](./screenshot-crew-desktop.png)
+![](./screenshot-tech-desktop.png)
+![](./screenshot-tablet-home.png)
+![](./screenshot-tablet-destination.png)
+![](./screenshot-tablet-crew.png)
+![](./screenshot-tablet-tech.png)
+![](./screenshot-default-mobile.png)
+![](./screenshot-nav-mobile.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-planets-fact-site-using-react-js-yVYX92Ov1z)
-- Live Site URL: [Live URL](https://frontend-mentor-react-krishnavishwakarma1595.vercel.app/planets-fact-site)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-space-tourism-website-solution-using-react-js-eNlHGrJgdr)
+- Live Site URL: [Live URL](https://frontend-mentor-react-krishnavishwakarma1595.vercel.app/space-tourism)
 
 ## My process
 
