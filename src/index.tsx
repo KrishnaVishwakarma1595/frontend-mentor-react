@@ -5,8 +5,10 @@ import "./index.css";
 import 'animate.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
+import 'react-toastify/dist/ReactToastify.css';
 import { router } from "./router";
 import reportWebVitals from "./reportWebVitals";
+import { ToastContainer } from 'react-toastify';
 
 const root = ReactDOM.createRoot(
   	document.getElementById("root") as HTMLElement
@@ -14,6 +16,7 @@ const root = ReactDOM.createRoot(
 root.render(
 	<React.StrictMode>
 		<RouterProvider router={router} />
+		<ToastContainer />
 	</React.StrictMode>
 );
 
