@@ -34,16 +34,25 @@ Your users should be able to:
 
 ### Screenshot
 
-![](./screenshot-desktop.png)
-![](./screenshot-desktop-1.png)
-![](./screenshot-desktop-2.png)
-![](./screenshot-mobile.png)
-![](./mobile.png)
+![](./screenshot-desktop-home.png)
+![](./screenshot-mobile-home.png)
+![](./screenshot-desktop-about.png)
+![](./screenshot-mobile-about.png)
+![](./screenshot-desktop-locations.png)
+![](./screenshot-mobile-locations.png)
+![](./screenshot-desktop-contact.png)
+![](./screenshot-mobile-contact.png)
+![](./screenshot-desktop-service-web.png)
+![](./screenshot-mobile-service-web.png)
+![](./screenshot-desktop-service-app.png)
+![](./screenshot-mobile-service-app.png)
+![](./screenshot-desktop-service-graphic.png)
+![](./screenshot-mobile-service-graphic.png)
 
 ### Links
 
-- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-planets-fact-site-using-react-js-yVYX92Ov1z)
-- Live Site URL: [Live URL](https://frontend-mentor-react-krishnavishwakarma1595.vercel.app/planets-fact-site)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/solutions/responsive-designo-agency-website-solution-using-react-js-and-typescript-t0cour5SYR)
+- Live Site URL: [Live URL](https://frontend-mentor-react-talb-ajgqy4nac.vercel.app/designo-multi-page/)
 
 ## My process
 
